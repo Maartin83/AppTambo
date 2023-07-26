@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="253dp"
+        app:srcCompat="@drawable/tambo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Bienvenido a nuestra App"
+        android:textAlignment="center"
+        android:textColor="#5E35B1"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="¿Que deseas hacer hoy?"
+        android:textAlignment="center"
+        android:textColor="#5E35B1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBuscarProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="Buscar Productos"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/amarillo"
+            app:cornerRadius="25dp"
+            app:icon="@drawable/buscar"
+            app:iconSize="40dp"
+            app:iconTint="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCarritoMenu"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="Carrito"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/teal_700"
+            app:cornerRadius="25dp"
+            app:icon="@drawable/carritodecompras"
+            app:iconSize="40dp"
+            app:iconTint="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCuentaMenu"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/material_dynamic_primary80"
+            android:text="Cuenta"
+            android:textColor="@color/black"
+            app:cornerRadius="25dp"
+            app:icon="@drawable/usuario"
+            app:iconPadding="1dp"
+            app:iconSize="40dp"
+            app:iconTint="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>
