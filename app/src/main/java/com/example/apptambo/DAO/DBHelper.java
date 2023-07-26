@@ -79,6 +79,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(det_car);
         db.execSQL(com_ven);
         db.execSQL(d_com_ven);
+        db.execSQL("insert into usuarios values('admin','admin@admin','admin')");
 
     }
 
